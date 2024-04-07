@@ -1,0 +1,153 @@
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+/* Ici c'est le css pour la section 1 et 2 ou on détermine la hauteur minimale des 2 section et le transform-style va nous permettre de créer des effets 3D */
+.section1,
+.section2 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+/*en bas c'est tout ce qui va passer avant le scrolle dans la section 1*/
+.section1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("R6.jpg") top center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.2);
+  filter: blur(0px);
+}
+
+/*en bas c'est tout ce qui va passer avant le scrolle dans la section 1*/
+.section1::after {
+  content: "";
+  width: 100%;
+  height: 120%;
+  position: absolute;
+  background: url("Rv2.png") top center;
+  background-size: contain;
+}
+/* En bas c'est le text Harry Potter dans la section 1*/
+.section1 .text {
+  top: 10%;
+  transform: translateZ(-0.5px) scale(1.5, 1.6) translate(-33%, 10%);
+}
+
+/* Ici c est le css de la nav barre*/
+.container1 {
+  max-width: 400px;
+  border-radius: 50px;
+  padding: 30px 20px;
+  display: block;
+  margin: 30px auto;
+  box-shadow: 0px 0px 80px 0 rgba(0, 0, 0, 0.997);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: rgba(255, 255, 255, 0.381);
+}
+
+/* Ici c'est le css de tout ce qui va passer dans la nav barre*/
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 50px;
+  font-size: 20px;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* ici on edit le text dans la section 1*/
+.text {
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  font-family: "Franklin Gothic Heavy";
+  font-size: 15vw;
+  color: rgb(219, 160, 9);
+  transform: scale(1, 1.1) translate(-50%, 10%);
+}
+/* ici on edit le text dans la section 2*/
+.section2 {
+  background-color: rgb(92, 136, 194);
+}
+
+/* Ici c'est le css du Titre qui nous presente le jeu */
+h1 {
+  font-size: 50px;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  padding: 40px;
+}
+
+/* Ici c'est le css de l'image recolter par l'API de la carte */
+img {
+  height: 400px;
+  width: 400px;
+}
+/* Ici c'est le css de la carte  taille , contour ect */
+.character {
+  background-color: rgba(0, 0, 0, 0.435);
+  width: 450px;
+  text-align: center;
+  margin: 45px;
+  border: 4mm ridge rgb(0, 0, 0);
+}
+
+/* Ici c'est le css de la carte lors'que on a le curseur sur la carte */
+.character:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 40px 80px rgb(255, 242, 0);
+  transform: translateY(-70px);
+  background-color: rgba(92, 136, 194, 0.536);
+}
+
+/* Ici c'est le css du Titre de la carte recolter par l'API */
+h3 {
+  font-size: 35px;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+}
+
+/* C'est le css de la div qui regroupe toute les cartes*/
+.carte-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  position: relative;
+}
+
+/* Ici c'est le css du P recolter */
+p {
+  color: rgb(255, 255, 255);
+}
+
+/* ici c'est le css du texte*/
+h4 {
+  font-size: 20px;
+  padding: 19px;
+  width: 1100px;
+}

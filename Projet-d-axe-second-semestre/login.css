@@ -1,0 +1,113 @@
+* {
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+body {
+  width: 80%;
+  margin: 80px auto;
+}
+
+form {
+  border: 1px solid rgba(153, 153, 153, 0.6);
+}
+
+form > div {
+  margin: 30px 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  margin: 25px;
+  font-size: 25px;
+}
+
+input {
+  height: 20px;
+  width: 40%;
+}
+
+button {
+  margin-left: 20px;
+  margin-bottom: 30px;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+body {
+  background-image: url(Rv3.jpeg);
+  background-attachment: fixed;
+  font-family: "Dancing Script", cursive;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 25px ;
+}
+
+#inscription-form {
+  margin: auto;
+  padding: px;
+  border: 4mm ridge rgb(0, 0, 0);
+  border-radius: 8px;
+  text-align: center;
+  width: 600px;
+  height: 350px;
+  background-color: #f4ebebc8;
+}
+
+.container {
+  max-width: 400px;
+  border-radius: 50px;
+  padding: 30px 20px;
+  display: block;
+  margin: 100px auto;
+  box-shadow: 0px 0px 80px 0 rgba(0, 0, 0, 0.997);
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: rgba(255, 255, 255, 0.234);
+}
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin: 0 50px;
+  font-size: 20px;
+}
+
+a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.p {
+  backdrop-filter: blur(20px);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    display: flex;
+  }
+  section {
+    flex: 2;
+    margin-right: 20px;
+  }
+  aside {
+    flex: 1;
+  }
+}
